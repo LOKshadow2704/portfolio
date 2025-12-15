@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    max-width: 1900px;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    width: fit-content;
+    padding: 20px;
+    background-color: #fff;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+main {}
+
+footer {}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    max-width: 1320px;
+}
+
+#about-me {}
+
+#about-me .container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me {
+    width: 100%;
+    background: radial-gradient(circle at center, #4C000C 0%, #000000 70%);
+}
+
+#about-me .container h1,
+#about-me .container p {
+    position: absolute;
+}
+
+#about-me .container h1 {
+    top: 0;
+    left: 44%;
+    transform: translateX(-100%);
+    z-index: 2;
+    text-align: right;
+    font-size: 40px;
+    color: #FAFAFA;
+}
+
+#about-me .container h1:nth-child(2) {
+    top: unset;
+    bottom: 0;
+    transform: translateX(50%);
+    right: 27%;
+}
+
+#about-me .container p {
+    width: 400px;
+    text-align: justify;
+    left: 180px;
+    color: #FAFAFA;
+}
+
+#about-me .container h1 span {
+    color: #FFD700;
+}
+
+#about-me img {
+    height: 450px;
+}
+
+#about-me .wrap-image {
+    filter: grayscale(80%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+#about-me .wrap-image:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    z-index: 3;
+}
+
+#services {
+    background: url(../imgs/LTK03473.webp) no-repeat center -30vh / 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+#services .container {
+    z-index: 2;
+}
+
+#services h1 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+#services li {
+    margin-bottom: 10px;
+}
+
+#tech-skills {}
+
+#tech-skills h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#tech-skills .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#tech-skills .skills>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 45px;
+}
+
+#tech-skills .skills img {
+    width: 80px;
+    transition: transform 0.35s ease;
+    cursor: pointer;
+}
+
+#tech-skills .skills img:hover {
+    transform: scale(1.2);
+}
+
+#experience {
+    background: #f2f4f5;
+    color: #1f2933;
+    position: relative;
+}
+
+#experience .container {
+    max-width: 900px;
+}
+
+#experience h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+#experience h1::after {
+    content: "";
+    width: 72px;
+    height: 4px;
+    background: #16a34a;
+    display: block;
+    margin-top: 14px;
+}
+
+
+.job {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 56px;
+    border-left: 3px solid rgba(22, 163, 74, 0.35);
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background: #16a34a;
+    border-radius: 50%;
+}
+
+.job h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.job span {
+    font-size: 1.2rem;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.job p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 12px;
+}
+
+.job p strong {
+    color: #065f46;
+    font-weight: 600;
+}
+
+.job:hover {
+    border-left-color: #16a34a;
+}
+
+.job:hover::before {
+    background: #15803d;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
